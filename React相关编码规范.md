@@ -3,7 +3,7 @@
 1. React 组件使用帕斯卡命名，引用实例采用驼峰命名, 组件名称应该和文件名一致: `eslint: react/jsx-pascal-case`
 
   ```jsx
-    import ReservationCard from './ReservationCard;
+    import ReservationCard from './ReservationCard';
 
     const reservationItem = <ReservationCard />;
   ```
@@ -127,11 +127,11 @@
 
 13. Refs 提供了一种方式，允许我们访问 DOM 节点或在 render 方法中创建的 React 元素 。我们推荐使用 createRef API 的方式
 
-14. `建议`使用`withXxx`或`xxxable`形式的词作为高阶组件的名称。
+14. `建议` 使用`withXxx`或`xxxable`形式的词作为高阶组件的名称。
 
   - 高阶组件是为组件添加行为和功能的函数，因此使用如上形式的词有助于对其功能进行理解。
 
-15. 建议按照以下顺序编排组件中的方法和属性：
+15. 建议 按照以下顺序编排组件中的方法和属性：
 
   ```txt
   static propTypes
@@ -142,11 +142,11 @@
   用于事件处理并且以属性的方式（onClick = e => {...}）声明的方法
   其它实例属性
   constructor
-  getChildContext
-  componentWillMount
+  getChildContext （如非必要，少用）
   componentDidMount
+  getDerivedStateFromProps
   shouldComponentUpdate
-  componentWillUpdate
+  getSnapshotBeforeUpdate
   componentDidUpdate
   componentWillUnmount
   事件处理方法
@@ -156,10 +156,10 @@
   其中shouldComponentUpdate和render是一个组件最容易被阅读的函数，因此放在最下方有助于快速定位。
   ```
 
-16. 建议使用箭头函数声明函数组件。
+16. 建议 使用箭头函数声明函数组件。
 
 17. 推荐除`顶层`或`路由级组件`以外，所有组件均在概念上实现为`纯组件`（Pure Component）。
 
 18. 禁止为继承自`PureComponent`的组件编写`shouldComponentUpdate`实现。
 
-19. 建议将`JSX的层级`控制在`3层`以内。
+19. 建议 将`JSX的层级`控制在`3层`以内。
