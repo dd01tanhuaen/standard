@@ -87,7 +87,7 @@
   />
   ```
 
-9. 在 render 方法中事件的回调函数，应该在构造函数中进行bind绑定。 `eslint: react/jsx-no-bind`, 或者使用 `@autobind` 进行事件处理方法与this的绑定。
+9. 在 render 方法中事件的回调函数，应该在构造函数中进行bind绑定。 `eslint: react/jsx-no-bind`, 或者使用 `@autobind` 进行事件处理方法与this的绑定。(state初始化和事件处理函数建议使用es7的property initializers新特性)
 
 ```jsx
    // good
