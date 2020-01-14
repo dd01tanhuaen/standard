@@ -3,7 +3,7 @@
 1. React 组件使用帕斯卡命名，引用实例采用驼峰命名, 组件名称应该和文件名一致: `eslint: react/jsx-pascal-case`
 
   ```jsx
-    import ReservationCard from './ReservationCard;
+    import ReservationCard from './ReservationCard';
 
     const reservationItem = <ReservationCard />;
   ```
@@ -142,11 +142,11 @@
   用于事件处理并且以属性的方式（onClick = e => {...}）声明的方法
   其它实例属性
   constructor
-  getChildContext
-  componentWillMount
+  getChildContext （如非必要，少用）
   componentDidMount
+  getDerivedStateFromProps
   shouldComponentUpdate
-  componentWillUpdate
+  getSnapshotBeforeUpdate
   componentDidUpdate
   componentWillUnmount
   事件处理方法
