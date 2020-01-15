@@ -162,4 +162,4 @@
 
 18. 禁止为继承自`PureComponent`的组件编写`shouldComponentUpdate`实现。
 
-19. 建议 将`JSX的层级`控制在`3层`以内。
+19. 建议将各个组件`JSX的层级`控制在`3层`以内。
