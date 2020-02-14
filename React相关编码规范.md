@@ -163,3 +163,5 @@
 18. 禁止为继承自`PureComponent`的组件编写`shouldComponentUpdate`实现。
 
 19. 建议将各个组件`JSX的层级`控制在`3层`以内。
+
+20. 建议 ComponentClass 方法中尽可能少嵌套函数
